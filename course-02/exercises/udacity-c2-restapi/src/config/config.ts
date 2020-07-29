@@ -1,11 +1,11 @@
 export const config = {
   dev: {
-    username: 'adnanreza',
-    password: '12rrAR88',
-    database: 'udagramAR',
-    host: 'udacityc2.ck7fzwxmzpyq.ca-central-1.rds.amazonaws.com',
+    username: process.env.POSTGRESS_USERNAME,
+    password: process.env.POSTGRESS_PASSWORD,
+    database: process.env.POSTGRESS_DATABASE,
+    host: process.env.POSTGRESS_HOST,
     dialect: 'postgres',
-    aws_region: 'ca-central-1',
+    aws_region: 'us-west-2',
     aws_profile: 'default',
     aws_media_bucket: 'udagram-ar-dev',
   },
