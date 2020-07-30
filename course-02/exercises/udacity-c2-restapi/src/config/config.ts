@@ -9,6 +9,9 @@ export const config = {
     aws_profile: process.env.AWS_PROFILE,
     aws_media_bucket: 'udagram-ar-dev',
   },
+  jwt: {
+    secret: 'hellowworld',
+  },
   prod: {
     username: '',
     password: '',
